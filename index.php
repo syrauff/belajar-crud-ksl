@@ -20,7 +20,7 @@ include 'db.php';
                 <h5>Add New Item</h5>
             </div>
             <div class="card-body">
-                <form method="POST" action="actions/create.php">
+                <form method="POST" action="create.php">
                     <div class="mb-3">
                         <label for="name" class="form-label">Item Name</label>
                         <input type="text" class="form-control" name="name" required>
@@ -67,7 +67,7 @@ include 'db.php';
                 <h5>Edit Item</h5>
             </div>
             <div class="card-body">
-                <form method="POST" action="actions/update.php">
+                <form method="POST" action="update.php">
                     <input type="hidden" name="id" value="<?= $row['id']; ?>">
                     <div class="mb-3">
                         <label for="name" class="form-label">Item Name</label>

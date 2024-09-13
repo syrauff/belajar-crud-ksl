@@ -8,7 +8,7 @@ if (isset($_POST['create'])) {
     $sql = "INSERT INTO items (name, description) VALUES ('$name', '$description')";
     
     if ($conn->query($sql) === TRUE) {
-        header("Location: ../index.php?msg=created");
+        header("Location: index.php?msg=created");
     } else {
         echo "Error: " . $conn->error;
     }
